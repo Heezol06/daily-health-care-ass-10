@@ -1,0 +1,10 @@
+.input-style {
+  border-bottom: 1px solid #4eeced;
+}
+.input-style:focus {
+  outline: none;
+}
+.pages-style:hover {
+  color: #4eeced;
+  cursor: pointer;
+}
