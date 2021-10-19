@@ -6,7 +6,7 @@ import illustration from '../../img/Login/undraw_medical_care_movn.svg'
 
 const Registration = () => {
     console.log(useAuth());
-    const {user, signInUsingGoogle, signInUsingGithub, handleUserRegistration } = useAuth() || {};
+    const {user, signInUsingGoogle, signInUsingGithub, handleUserRegistration  } = useAuth() || {};
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const location = useLocation();

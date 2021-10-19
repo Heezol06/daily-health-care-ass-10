@@ -13,12 +13,7 @@ const Details = () => {
         .then(data => setUserDetails(data))
     },[])
     
-
-
     const search = userDetails.find(details => details.id == serviceId)
-    
-
-
     return (
         <div>
             <div class="container w-75 my-5 card mb-3" style={{backgroundColor:"#FFF7E0"}}>
@@ -26,7 +21,7 @@ const Details = () => {
                 <div class="card-body">
                     <h5 class="card-title">{search?.serviceName}</h5>
                     <p class="card-text">{search?.description}</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <p class="card-text"><small class="text-muted">Schedule: {search?.schedule}</small></p>
                 </div>
                 </div>
 

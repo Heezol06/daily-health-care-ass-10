@@ -26,18 +26,6 @@ const useFirebasae = () =>{
         })
     }
 
-    useEffect(()=>{
-        const unSubscribed = onAuthStateChanged(auth, (user) =>{
-            if(user){
-                setUser(user);
-            }else{
-                setUser({})
-            }
-            setIsLoading(false);
-        })
-        return () => unSubscribed;
-    },[])
-
     const logOut=() =>{
         setIsLoading(true);
         const auth = getAuth();
@@ -59,6 +47,17 @@ const useFirebasae = () =>{
             setUser(result.user);
           })
         }
+        useEffect(()=>{
+            const unSubscribed = onAuthStateChanged(auth, (user) =>{
+                if(user){
+                    setUser(user);
+                }else{
+                    setUser({})
+                }
+                setIsLoading(false);
+            })
+            return () => unSubscribed;
+        },[])
     
     return {
         user,
