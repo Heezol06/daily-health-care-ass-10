@@ -21,6 +21,12 @@ const Registration = () => {
                 history.push(redirect_uri);
             })
     }
+    const handleGithubLogin = () => {
+        signInUsingGithub()
+            .then(result => {
+                history.push(redirect_uri);
+            })
+    }
     const handleEmail = (e) =>{
         setEmail(e.target.value);
     }
@@ -47,7 +53,7 @@ const Registration = () => {
                 <input type="password" className="form-control w-50" onChange={handlePassword} name="password" placeholder="Type your Password" id="" />
                 </div>
                 <div className="my-3">
-                <button className="btn" onClick={signInUsingGithub} ><i className="fab fa-github fa-lg mx-3"></i></button>
+                <button className="btn" onClick={handleGithubLogin} ><i className="fab fa-github fa-lg mx-3"></i></button>
                 <button className="btn" onClick={handleGoogleLogin}><i className="fab fa-google fa-lg mx-3"></i></button>
                 </div>
                 {user?.email ?

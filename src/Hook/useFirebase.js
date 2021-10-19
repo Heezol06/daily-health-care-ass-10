@@ -20,9 +20,9 @@ const useFirebasae = () =>{
     }
     const signInUsingGithub =()=>{
         const githubProvider = new GithubAuthProvider();
-        signInWithPopup(auth, githubProvider)
+      return  signInWithPopup(auth, githubProvider)
         .then(result=>{
-            setUser(result.user)
+            console.log(result.user)
         })
     }
 
