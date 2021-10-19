@@ -10,9 +10,7 @@ const SingleService = ({service}) => {
                 <div className="card-body">
                     <h5 className="card-title">{serviceName}</h5>
                     <p className="card-text">{description.slice(0,90)}</p>
-                    <h6 className="" style={{backgroundColor:"#FFCDD2", padding:"5px" , borderRadius:"10px"}}>
-                        <i className="fas fa-stethoscope"></i>
-                        {drName} <i class="fas fa-stethoscope"></i></h6>
+                    <h6 class="" style={{backgroundColor: "#ff9eaa", padding: "5px", borderRadius: "10px" ,}} ><i class="fas fa-stethoscope bg-dark p-2 rounded-circle me-3" style={{color: "#acf5ff",}}></i>{drName}</h6>
                     <div className="d-flex justify-content-between">
                         <div>
                             <p>Schedule: {schedule}</p>

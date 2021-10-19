@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../../Hook/useAuth';
 import illustration from '../../img/Login/undraw_medical_care_movn.svg'
 
@@ -9,8 +9,18 @@ const Registration = () => {
     const {user, signInUsingGoogle, signInUsingGithub, handleUserRegistration } = useAuth() || {};
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_uri = location.state?.from || '/Details/:serviceId';
 
 
+
+    const handleGoogleLogin = () => {
+        signInUsingGoogle()
+            .then(result => {
+                history.push(redirect_uri);
+            })
+    }
     const handleEmail = (e) =>{
         setEmail(e.target.value);
     }
@@ -22,7 +32,6 @@ const Registration = () => {
         
         window.location.reload();
     }
-
     return (
         <div className="d-flex">
             <div className="col-lg-6 py-5">
@@ -39,7 +48,7 @@ const Registration = () => {
                 </div>
                 <div className="my-3">
                 <button className="btn" onClick={signInUsingGithub} ><i className="fab fa-github fa-lg mx-3"></i></button>
-                <button className="btn" onClick={signInUsingGoogle}><i className="fab fa-google fa-lg mx-3"></i></button>
+                <button className="btn" onClick={handleGoogleLogin}><i className="fab fa-google fa-lg mx-3"></i></button>
                 </div>
                 {user?.email ?
                     <h1>Welcome {user?.displayName}</h1> 
