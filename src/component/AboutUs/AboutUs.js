@@ -1,10 +1,11 @@
 import React from 'react';
+import './AboutUs.css'
 
 const AboutUs = () => {
     return (
         <div className="bg-dark" style={{borderTop:"1px solid white",borderBottom:"1px solid white"}}>
-            <div className="d-flex text-light mt-5">
-            <div className="col-lg-2 bg-dark">
+            <div className="responsive-info d-flex text-light mt-5">
+            <div className="col-lg-2 bg-dark responsive-info">
                 <img src="https://i.ibb.co/KGzFLST/186250.png" className="w-25" alt="" />
                 <h5>Address: 685 Lane St. California, 33020</h5>
             </div>

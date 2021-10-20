@@ -44,19 +44,19 @@ const Footer = () => {
             </div>
             <div className="col-lg-3">
                 <h4 style={{textDecoration:"underline" , textDecorationColor:"#4eeced" }}>Photos</h4>
-                <div className="mt-5">
-                    <div className="col-lg-3 d-flex">
-                        <img src="https://i.ibb.co/zRgWkJq/ordinary-busy-day-surgeon.jpg" className="w-100 h-100" alt="" />
-                        <img src="https://i.ibb.co/QmmnX7q/surgeon-writing-down-some-operation-notes.jpg" className="w-100 h-100" alt="" />
-                        <img src="https://i.ibb.co/d7Tj2X9/afro-doctors-consulting-young-adult-hospital-ward.jpg" className="w-100 h-100" alt="" />
-                        <img src="https://i.ibb.co/cJNjDPx/team-young-specialist-doctors-standing-corridor-hospital.jpg" className="w-100 h-100" alt="" />
+                <div className="mt-5 responsive-footer">
+                    <div className="col-lg-3 d-flex responsive-footer">
+                        <img src="https://i.ibb.co/zRgWkJq/ordinary-busy-day-surgeon.jpg" className="w-100 h-100 footer-img" alt="" />
+                        <img src="https://i.ibb.co/QmmnX7q/surgeon-writing-down-some-operation-notes.jpg" className="w-100 h-100 footer-img" alt="" />
+                        <img src="https://i.ibb.co/d7Tj2X9/afro-doctors-consulting-young-adult-hospital-ward.jpg" className="w-100 h-100 footer-img" alt="" />
+                        <img src="https://i.ibb.co/cJNjDPx/team-young-specialist-doctors-standing-corridor-hospital.jpg" className="w-100 h-100 footer-img" alt="" />
                     </div>
-                    <div className="col-lg-4 d-flex">
-                        <img src="https://i.ibb.co/ssfK11J/interior-view-operating-room.jpg" alt="" className="w-100 h-100" srcSet="" />
-                        <img src="https://i.ibb.co/GRJDfhZ/large-modern-office-building.jpg" alt="" className="w-100 h-100" srcSet="" />
-                        <img src="https://i.ibb.co/KwpGt7z/nurse-measuring-patient-blood-pressure.jpg" alt="" className="w-100 h-100" srcSet="" />
+                    <div className="col-lg-4 d-flex responsive-footer">
+                        <img src="https://i.ibb.co/ssfK11J/interior-view-operating-room.jpg" alt="" className="w-100 h-100 footer-img" srcSet="" />
+                        <img src="https://i.ibb.co/GRJDfhZ/large-modern-office-building.jpg" alt="" className="w-100 h-100 footer-img" srcSet="" />
+                        <img src="https://i.ibb.co/KwpGt7z/nurse-measuring-patient-blood-pressure.jpg" alt="" className="w-100 h-100 footer-img" srcSet="" />
                     </div>
-                    <div className="col-lg-3"></div>
+                    {/* <div className="col-lg-3"></div> */}
                 </div>
             </div>
             </div>

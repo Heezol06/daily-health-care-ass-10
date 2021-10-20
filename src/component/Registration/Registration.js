@@ -11,7 +11,7 @@ const Registration = () => {
     const [password, setPassword] = useState("");
     const location = useLocation();
     const history = useHistory();
-    const redirect_uri = location.state?.from || '/Details/:serviceId';
+    const redirect_uri = location.state?.from || '/home';
 
 
 

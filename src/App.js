@@ -1,5 +1,4 @@
 import './App.css';
-import Navabr from './component/Header/Navabr';
 import Footer from './component/Footer/Footer';
 import { BrowserRouter , Switch, Route} from 'react-router-dom';
 import Home from './component/Home/Home';
@@ -11,6 +10,7 @@ import Registration from './component/Registration/Registration';
 import AutheProvider from './component/Context/AutheProvider';
 import Details from './component/Details/Details';
 import PrivetRoute from './component/PrivetRoute/PrivetRoute';
+import Navabr from './component/Header/Navabr';
 
 function App() {
   return (

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import SingleService from '../SingleService/SingleService';
+import './Service.css'
 
 const Service = () => {
     const [services, setServices] = useState([])
@@ -10,8 +11,8 @@ const Service = () => {
     },[])
     return (
         <div className="container">
-            <h1 className="mt-2 p-1 d-inline-flex" style={{backgroundColor:"#F9F3DF", borderRadius:"10px", fontFamily: "'Anton', sans-serif"}}>Our <span style={{color:"#69DADB"}}>Services</span> </h1>
-            <div className="row mx-auto">
+            <h1 className=" p-1 d-inline-flex shadow" style={{backgroundColor:"#F9F3DF", borderRadius:"10px", fontFamily: "'Anton', sans-serif", marginTop:"100px"}}>Our <span style={{color:"#69DADB"}}>Services</span> </h1>
+            <div className="row mx-auto service-container">
             {
                 services.map(service => <SingleService
                 key={service.id}

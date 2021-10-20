@@ -8,3 +8,15 @@
   color: #4eeced;
   cursor: pointer;
 }
+@media only screen and (max-width: 768px) {
+  .responsive-footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-img {
+    width: 40px !important;
+  }
+  h4 {
+    font-size: x-small;
+  }
+}

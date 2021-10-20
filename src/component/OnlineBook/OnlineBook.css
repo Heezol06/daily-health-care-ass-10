@@ -1,0 +1,8 @@
+@media only screen and (max-width: 768px) {
+  .img-responsive {
+    width: 55%;
+    position: absolute;
+    top: 6156px;
+    right: 10px;
+  }
+}

@@ -3,8 +3,8 @@ import React from 'react';
 const Introduction = () => {
     return (
         <div>
-            <h2 className="mt-2 p-1 d-inline-flex" style={{fontFamily: "'Anton', sans-serif", backgroundColor:"#F9F3DF",}}>Welcome from Daily <span style={{color: "#69DADB" , }}>-Health-</span> care </h2>
-            <div style={{backgroundImage:"url('https://i.ibb.co/VgRxKpT/introduction-bg.jpg')", borderRadius:"15px", padding:"20px"}} className="text-light container">
+            <h2 className=" p-1 d-inline-flex" style={{fontFamily: "'Anton', sans-serif", backgroundColor:"#F9F3DF", marginTop:"100px"}}>Welcome from Daily <span style={{color: "#69DADB" , }}>-Health-</span> care </h2>
+            <div style={{backgroundImage:"url('https://i.ibb.co/VgRxKpT/introduction-bg.jpg')", marginTop:"50px", borderRadius:"15px", padding:"20px"}} className="text-light container">
             <h1>No matter what your concern contact us and take the best treatment.</h1>
             <div>
             <i className="fas fa-procedures fa-7x" style={{color: "#69DADB"}}></i>
