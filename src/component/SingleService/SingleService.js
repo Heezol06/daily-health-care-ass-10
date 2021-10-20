@@ -6,7 +6,7 @@ const SingleService = ({service}) => {
     const {serviceName, drName, schedule, img, description, id} = service
     return (
         <div className="col-lg-4 " style={{marginTop:"50px"}}>
-           <div className="card my-3 shadow-sm service-container" style={{width: "20rem", height:"550px"}}>
+           <div className="card my-3 shadow-sm " style={{width: "20rem", height:"550px"}}>
                 <img src={img} className="card-img-top" alt="..." />
                 <div className="card-body">
                     <h5 className="card-title">{serviceName}</h5>
